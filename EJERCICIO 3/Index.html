@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div></div>
+    <div class="container"></div>
+<h1> Exercise #3 (sugerencia reduce() )</h1> 
+<h3> Write a program to compute the sum and product (multiplication) of an array of numbers. Print out the sum and the product.</h3>
+<p> <h4>Example: Given an array [1, 2, 3, 4] The sum is 10. The product is 24.</h4> </p>
+<p> <h3>SOLUCION (ver consola):</h3></p>
+<br> sumAndProduct(array) {
+         <br>let sum = 0;
+         <br> let product = 1;
+    <br>for (let i = 0; i < array.length; i++) {
+        <br>sum += array[i];
+        <br> product *= array[i];
+    <br>}
+    
+        <br> return [sum, product];
+    <br>}
+
+        <br>let array = [1, 2, 3, 4];
+        <br>let [sum, product] = sumAndProduct(array);
+        <br>console.log("Given an array " + array + " The sum is " + sum + ". The product is " + product + ".");
+
+
+</body>
+</html>

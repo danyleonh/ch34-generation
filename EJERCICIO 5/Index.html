@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+   <h1><strong>Exercise #5</strong>
+    For each of the exercises below, assume you are starting with the following people array.
+    </h1> 
+    <h2>let people = ["Maria", "Dani", "Luis", "Juan", "Camila"];</h2>
+    <h4><ol>1.Write a command that prints out all of the people in the list.</ol>	
+        <ol>2.Write the command to remove "Dani" from the array.</ol>
+       <ol>3.Write the command to remove "Juan" from the array.</ol> 
+       <ol>4.Write the command to move "Luis" to the front of the array.</ol> 
+        <ol>5.	Write the command to add your name to the end of the array.</ol>
+       <ol>6.	Using a loop, iterate through this array and after console.log "Maria", exit from the loop. (usar break)</ol> 
+        <ol>7.	Write the command that gives the indexOf where "Maria" is located.</ol>
+        At the end of the exercise, there should be 4 people in the array.
+        </h4>
+        <p> <h2>Solucion: ver en consola</h2></p>
+        <div>
+          <h3><br> <strong>// 1. Print out all of the people in the list//</strong>
+            console.log(people);
+            <br> 
+            <br> <strong>// 2. Remove "Dani" from the array//</strong> 
+            <br>let indexDani = people.indexOf("Dani");
+            <br> if (indexDani !== -1) {
+              people.splice(indexDani, 1);
+              <br> }
+            
+            <br> 
+            <br> <strong>// 3. Remove "Juan" from the array</strong> 
+            <br>let indexJuan = people.indexOf("Juan");
+            <br>   if (indexJuan !== -1) {
+                <br> people.splice(indexJuan, 1);
+                <br>}
+            <br> 
+            <br> <strong>// 4. Move "Luis" to the front of the array//</strong> 
+            <br>let indexLuis = people.indexOf("Luis");
+            <br>if (indexLuis !== -1) {
+                <br> let luis = people.splice(indexLuis, 1);
+                <br> people.unshift(luis[0]);
+                <br>}
+            <br>  
+            <br> <strong>// 5. Add your name to the end of the array//</strong> 
+            <br> let yourName = "Daniela";
+            <br> people.push(yourName);
+            <br> 
+            <br>  <strong>// 6. Iterate through the array and exit after console.log "Maria"//</strong>
+            <br> for (let i = 0; i < people.length; i++) {
+                <br>  console.log(people[i]);
+                <br>if (people[i] === "Maria") {
+                    <br>  break;
+                    <br> }
+                    <br> }
+            <br> 
+            <br> <strong>// 7. Get the indexOf where "Maria" is located//</strong> 
+            <br> let indexMaria = people.indexOf("Maria");
+            <br> console.log(indexMaria);
+            <br> 
+            <br>  <strong>// At the end of the exercise, there should be 4 people in the array//.</strong> 
+            <br> let people = ["Maria", "Dani", "Luis", "Juan", "Camila"];</h3> </div>
+
+
+</body>
+</html>
